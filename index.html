@@ -9,6 +9,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Stats preview card component</title>
     <style>
@@ -19,46 +25,63 @@
     </style>
   </head>
   <body
-    class="flex min-h-screen flex-col items-center justify-center bg-[#0A0C1C] text-white"
+    class="flex min-h-screen flex-col items-center justify-center bg-[#0A0C1C] font-inter text-white"
   >
-    <main class="max-w-[327px] min-h-fit rounded-lg overflow-hidden bg-[#1B1937]">
-      <section class="relative">
-        <div class="absolute h-full w-full bg-[#AB5CDB] mix-blend-multiply"></div>
-        <picture class="h-[240px]">
+    <main
+      class="min-h-fit w-[327px] overflow-hidden rounded-lg bg-[#1B1937] lg:flex lg:w-fit lg:flex-row-reverse"
+    >
+      <section class="relative lg:w-[540px]">
+        <div
+          class="absolute h-full w-full bg-[#AB5CDB] mix-blend-multiply"
+        ></div>
+        <picture class="h-[240px] object-cover lg:h-10">
           <source
-            media="(min-width: 1440px)"
+            media="(min-width: 1024px)"
             srcset="./images/image-header-desktop.jpg"
           />
           <source
             media="(min-width: 375px)"
             srcset="./images/image-header-mobile.jpg"
           />
-          <img
-            src="./images/image-header-mobile.jpg"
-            alt="Header"
-          />
+          <img src="./images/image-header-mobile.jpg" alt="Header" />
         </picture>
       </section>
-      <section class="px-[32px] pb-[32px] pt-[40px] text-center">
-        <h1 class="text-[1.75rem] font-bold leading-8">
+      <section
+        class="px-[32px] pb-[32px] pt-[40px] text-center lg:flex lg:w-[570px] lg:flex-col lg:justify-center lg:text-left"
+      >
+        <h1 class="text-[1.75rem] font-bold leading-8 lg:text-4xl lg:w-[25.125rem]">
           Get <strong class="text-[#AB5CDB]">insights</strong> that help your
           business grow.
         </h1>
-        <p class="mt-4 text-[0.938rem]">
+        <p class="mt-4 text-[0.938rem] lg:w-[360px] lg:mt-6">
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
         </p>
-        <div class="mt-10">
-          <strong class="text-2xl">10k+</strong>
-          <p class="uppercase tracking-[0.063rem]">companies</p>
-        </div>
-        <div class="mt-6">
-          <strong class="text-2xl">314</strong>
-          <p class="uppercase tracking-[0.063rem]">templates</p>
-        </div>
-        <div class="mt-6">
-          <strong class="text-2xl uppercase">12m+</strong>
-          <p class="uppercase tracking-[0.063rem]">queries</p>
+        <div class="mt-10 flex-col lg:flex lg:flex-row lg:mt-[72px]">
+          <div>
+            <strong class="text-2xl">10k+</strong>
+            <p
+              class="font-lexend uppercase tracking-[0.063rem] opacity-60 lg:text-xs"
+            >
+              companies
+            </p>
+          </div>
+          <div class="mt-6 lg:ml-16 lg:mt-0">
+            <strong class="text-2xl">314</strong>
+            <p
+              class="font-lexend uppercase tracking-[0.063rem] opacity-60 lg:text-xs"
+            >
+              templates
+            </p>
+          </div>
+          <div class="mt-6 lg:ml-16 lg:mt-0">
+            <strong class="text-2xl uppercase">12m+</strong>
+            <p
+              class="font-lexend uppercase tracking-[0.063rem] opacity-60 lg:text-xs"
+            >
+              queries
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -67,7 +90,10 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/vyonizr" target="_blank"
+        >vyonizr</a
+      >.
     </div>
   </body>
 </html>
