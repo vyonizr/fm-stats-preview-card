@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Stats preview card component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body
+    class="flex min-h-screen flex-col items-center justify-center bg-[#0A0C1C] text-white"
+  >
+    <main class="max-w-[327px] min-h-fit rounded-lg overflow-hidden bg-[#1B1937]">
+      <section class="relative">
+        <div class="absolute h-full w-full bg-[#AB5CDB] mix-blend-multiply"></div>
+        <picture class="h-[240px]">
+          <source
+            media="(min-width: 1440px)"
+            srcset="./images/image-header-desktop.jpg"
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="./images/image-header-mobile.jpg"
+          />
+          <img
+            src="./images/image-header-mobile.jpg"
+            alt="Header"
+          />
+        </picture>
+      </section>
+      <section class="px-[32px] pb-[32px] pt-[40px] text-center">
+        <h1 class="text-[1.75rem] font-bold leading-8">
+          Get <strong class="text-[#AB5CDB]">insights</strong> that help your
+          business grow.
+        </h1>
+        <p class="mt-4 text-[0.938rem]">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="mt-10">
+          <strong class="text-2xl">10k+</strong>
+          <p class="uppercase tracking-[0.063rem]">companies</p>
+        </div>
+        <div class="mt-6">
+          <strong class="text-2xl">314</strong>
+          <p class="uppercase tracking-[0.063rem]">templates</p>
+        </div>
+        <div class="mt-6">
+          <strong class="text-2xl uppercase">12m+</strong>
+          <p class="uppercase tracking-[0.063rem]">queries</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
